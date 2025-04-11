@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gefrata | Programmer & Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #ffd700;
+      --bg: #0d0d0d;
+      --card: #1a1a1a;
+      --text: #f5f5f5;
+      --muted: #aaaaaa;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    header {
+      padding: 80px 20px 60px;
+      background: linear-gradient(145deg, #111, #1f1f1f);
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    header h1 {
+      font-size: 3rem;
+      color: var(--primary);
+    }
+    header p {
+      max-width: 700px;
+      margin: 20px auto;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+    nav {
+      background-color: #111;
+      padding: 15px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease-in-out;
+    }
+    nav a:hover {
+      color: var(--primary);
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: var(--primary);
+      text-align: center;
+    }
+    .skills, .projects, .experience {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background-color: var(--card);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      background-color: #111;
+      margin-top: 40px;
+    }
+    a {
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: var(--primary);
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gefrata</h1>
+    <p>Web Developer | Music Producer | Gamer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skill</a>
+    <a href="#projects">Project</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p style="max-width: 800px; margin: auto; text-align: center;">Hi, I’m Gefrata — a passionate programmer and self-driven tech enthusiast with a strong interest in embedded systems, cryptography, and the ever-evolving world of cybersecurity. I enjoy exploring how technology can be used not only to solve problems but also to spark creativity and innovation.
+
+        Although I’m still early in my journey, I’ve been consistently building up my skills in programming languages like Python, C/C++, and JavaScript. I’m especially interested in microcontroller development (like ESP32 and Arduino), as well as secure communication systems using LoRa and encryption techniques. I love diving deep into how things work under the hood, whether it's a cryptographic algorithm or a simple IoT device.
+        
+        In addition to my interest in technology, I also produce music and beats. For me, code and music are both forms of creation—one logical, the other emotional. Producing music allows me to express ideas and moods that can’t always be written in code. I believe creativity flows best when different passions are allowed to meet, and that blend often inspires my work across disciplines.
+        
+        I’m currently focused on expanding my knowledge and working toward building meaningful projects that combine engineering, security, and creativity. Whether it’s developing a secure IoT system or composing an atmospheric track, I’m always looking to push boundaries and learn something new.
+        
+        If you’re into technology, music, or looking to collaborate on something exciting — I’d love to connect.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skill</h2>
+    <div class="skills">
+      <div class="card">Python, C/C++, JavaScript</div>
+      <div class="card">Microcontroller (Arduino, ESP-32)</div>
+      <div class="card">Web Development (HTML, CSS)</div>
+      <div class="card">Cryptography</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Project</h2>
+    <div class="projects">
+      <div class="card">
+        <strong>Coming Soon</strong><br>
+        Coming Soon.
+      </div>
+      <div class="card">
+        <strong>Coming Soon</strong><br>
+        Coming Soon.
+      </div>
+      <div class="card">
+        <strong>Coming Soon</strong><br>
+        Coming Soon.
+      </div>
+      <div class="card">
+        <strong>Coming Soon</strong><br>
+        Coming Soon.
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="experience">
+      <div class="card">Coming Soon</div>
+      <div class="card">Coming Soon</div>
+      <div class="card">Coming Soon</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p style="text-align: center;">Facebook: <a href="https://www.facebook.com/geognting/" target="_blank">Geo Ginting</a><br>    
+    Instagram: <a href="https://www.instagram.com/geognting_/" target="_blank">@geognting_</a><br>
+    Youtube: <a href="https://www.youtube.com/channel/UCtdkD_YmifYGhHIcmLhO3-A" target="_blank">Gefrata</a><br>
+    GitHub: <a href="https://github.com/gefrata" target="_blank">gefrata</a><br>
+    Email: <a href="mailto:geogintinggg@gmail.com">geogintinggg@gmail.com</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Gefrata. Semua hak dilindungi.
+  </footer>
+</body>
+</html>
