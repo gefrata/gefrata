@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Gefrata</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Gefrata</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="portfolio">
+            <h2>My Work</h2>
+            <div class="portfolio-grid">
+                <!-- Proyek 1: Gambar + Teks -->
+                <div class="portfolio-item">
+                    <img src="img/project1.jpg" alt="Web Design Project">
+                    <h3>Web Design Project</h3>
+                    <p>Coming Soon</p>
+                </div>
+                <!-- Proyek 2: Video + Teks -->
+                <div class="portfolio-item">
+                    <video controls>
+                        <source src="img/demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>Animation Demo</h3>
+                    <p>Coming Soon.</p>
+                </div>
+                <!-- Proyek 3: Audio + Teks -->
+                <div class="portfolio-item">
+                    <audio controls>
+                        <source src="img/beat.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <h3>Original Beat</h3>
+                    <p>Coming Soon.</p>
+                </div>
+                <!-- Proyek 4: File .flp + Teks -->
+                <div class="portfolio-item">
+                    <img src="img/fl-preview.jpg" alt="FL Studio Project Preview">
+                    <h3>FL Studio Project</h3>
+                    <p>Coming Soon.</p>
+                    <a href="img/project.flp" download class="download-btn">Download .flp</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Gefrata. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</body>
+</html>
